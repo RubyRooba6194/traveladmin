@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode (default) */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+/* Dark mode */
+.dark {
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --border-color: #374151;
+}
+
+/* Apply dark mode styles */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.dark .bg-white {
+  background-color: #1f2937 !important;
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-800 {
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark .border-gray-200,
+.dark .border-gray-300 {
+  border-color: #374151 !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: #374151 !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+/* Dark mode for cards and containers */
+.dark .shadow-lg,
+.dark .shadow-md,
+.dark .shadow {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Dark mode for inputs */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: #f9fafb !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Dark mode for buttons */
+.dark button:not(.bg-blue-600):not(.bg-red-600):not(.bg-green-600) {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+/* Keep colored buttons as is */
+.dark .bg-blue-600,
+.dark .bg-blue-700,
+.dark .bg-red-600,
+.dark .bg-green-600 {
+  /* Keep original colors for action buttons */
+}
+
+/* Sidebar dark mode */
+.dark nav {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+}
+
+/* Table dark mode */
+.dark table {
+  background-color: #1f2937 !important;
+}
+
+.dark th {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+.dark td {
+  border-color: #374151 !important;
+  color: #d1d5db !important;
+}
